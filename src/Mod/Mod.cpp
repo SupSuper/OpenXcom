@@ -127,6 +127,7 @@ int Mod::FIRE_DAMAGE_RANGE[2];
 std::string Mod::DEBRIEF_MUSIC_GOOD;
 std::string Mod::DEBRIEF_MUSIC_BAD;
 int Mod::DIFFICULTY_COEFFICIENT[5];
+bool Mod::SNAP_TO_NEAREST_CITY;
 
 /// Predefined name for first loaded mod that have all original data
 const std::string ModNameMaster = "master";
@@ -1086,6 +1087,7 @@ void Mod::loadConstants(const YAML::Node &node)
 	GRAPHS_CURSOR = node["graphsCursor"].as<int>(GRAPHS_CURSOR);
 	DAMAGE_RANGE = node["damageRange"].as<int>(DAMAGE_RANGE);
 	EXPLOSIVE_DAMAGE_RANGE = node["explosiveDamageRange"].as<int>(EXPLOSIVE_DAMAGE_RANGE);
+	SNAP_TO_NEAREST_CITY = node["snapToNearestCity"].as<bool>(SNAP_TO_NEAREST_CITY);
 	size_t num = 0;
 	for (YAML::const_iterator j = node["fireDamageRange"].begin(); j != node["fireDamageRange"].end() && num < 2; ++j)
 	{

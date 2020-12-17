@@ -234,8 +234,7 @@ void BuildNewBaseState::globeClick(Action *action)
 	{
 		if (_globe->insideLand(lon, lat))
 		{
-			// TODO: check rule if snapToNearestCity enabled for XCOM1
-			if (Options::getActiveMaster() == "xcom1")
+			if (Mod::SNAP_TO_NEAREST_CITY && Options::getActiveMaster() == "xcom1")
 			{
 				_globe->snapToNearestCity(&lon, &lat);
 			}
