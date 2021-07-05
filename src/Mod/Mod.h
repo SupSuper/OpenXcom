@@ -238,6 +238,7 @@ public:
 	static std::string DEBRIEF_MUSIC_GOOD;
 	static std::string DEBRIEF_MUSIC_BAD;
 	static int DIFFICULTY_COEFFICIENT[5];
+	static bool SNAP_TO_NEAREST_CITY;
 	// reset all the statics in all classes to default values
 	static void resetGlobalStatics();
 	/// Creates a blank mod.

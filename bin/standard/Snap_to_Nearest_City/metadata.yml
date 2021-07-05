@@ -1,0 +1,9 @@
+#
+# metadata.yaml for Snap to Nearest City
+
+name: "Snap to Nearest City"
+version: 1.0
+description: "Snap new base to the nearest city of same region."
+author: the OpenXcom team
+
+master: xcom1
